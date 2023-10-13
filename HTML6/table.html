@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 
 <head>
@@ -19,11 +19,25 @@ table{margin: auto; width: 550px;
 td{
    border: solid;
 }
+.firstcollum{
+   background-color:#CCCCCC;
+   width: 25%;
+}
 th{
    border: solid;
-   background-color: #003300;
+   
 }
-
+caption{
+   color: #003300;
+   font-weight: bold;
+}
+.weekday{
+   font-family: 'Courier New', Courier, monospace;
+   padding: 3px;
+}
+.titles{
+   background-color: #99FF66;
+}
 </style>
 </head>
 <body>
@@ -32,13 +46,15 @@ th{
       <caption>
          My Schedule
       </caption>
+      <colgroup class="firstcollum" span="1"></colgroup>
+      <colgroup class="weekday" span="5"></colgroup>
 	<tr>
       <th>Courses</th>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th>
-      <th>Friday</th>
+      <th class="titles">Monday</th>
+      <th class="titles">Tuesday</th>
+      <th class="titles">Wednesday</th>
+      <th class="titles">Thursday</th>
+      <th class="titles">Friday</th>
 
    </tr>
    <tr>
